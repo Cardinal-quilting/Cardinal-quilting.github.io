@@ -27,7 +27,10 @@ var loadFile = function(event) {
 };
 </script>
 	
-<script type="text/javascript" src="dat.gui.min.js"></script>
+<script type="text/javascript" src="dat.gui.min.js">
+	var gui = new dat.GUI({ width: 300 });
+	var f1 = gui.addFolder("Simulation options");
+</script>
 
 
 <button onclick="window.print()">Print this page</button>
