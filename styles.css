@@ -6,5 +6,11 @@
   color: white;
   font-size: 20px;
   margin: 0px;
+  height: 5%;
+}
+
+.responsive {
+  width: 5%;
+  max-width: 10px
   height: 180px;
 }
