@@ -2,15 +2,21 @@
 img {
     max-width: auto;
     max-height: 100%;
+    padding: 0% 1% 0% 0%
 }
 
 .header {
   position: relative;
-  padding: 0%;
+  padding: 0.0%;
   text-align: left;
-  background: -webkit-linear-gradient(left, #bdbdbd, #a50f15);
+  background: -webkit-linear-gradient(left, #67000d, #bdbdbd);
   color: white;
   font-size: 20px;
   margin: 0px;
   height: 100px;
+}
+
+div.headertext {
+  display: table-cell;
+  vertical-align: middle;
 }
