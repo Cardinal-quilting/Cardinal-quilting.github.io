@@ -6,7 +6,7 @@
   color: white;
   font-size: 2.25vh;
   margin: 0px;
-  height: 10vw;
+  height: 15vh;
 }
 
 .header img {
@@ -14,7 +14,24 @@
     background-size: 100% 100%;
 }
 
+.navigation_bar {
+  height: 4.5vh;
+}
 
-.buttons {
-  height: 2vw;
+button.navigation {
+  background-color: #67000d;
+  border: none;
+  color: #f0f0f0;
+  padding: 0.5vh 0.5vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5vh;
+  margin: 1vh 0.1vw;
+  cursor: pointer;
+  border-radius: 1vw;
+  border-color: #252525;
+}
+
+button.navigation:hover {
+  background-color: #252525;
 }

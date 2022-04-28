@@ -7,9 +7,9 @@ template.innerHTML = `
     <img src="figures/CardinalQuiltsLogo.png" align="left">
     <img src="figures/CardinalQuiltsNameLogo.png" align="top" style="padding: 0.3% 0% 0% 0%">
   </div>
-  <div class="buttons">
-  <a class="page-link" href="index.html"><button class="button">Home</button></a>
-  <a class="page-link" href="paper-piecing.html"><button class="button">Paper piecing</button></a>
+  <div class="navigation_bar">
+  <a class="page-link" href="index.html"><button class="navigation">Home</button></a>
+  <a class="page-link" href="paper-piecing.html"><button class="navigation">Paper piecing</button></a>
   </div>
 `;
 
