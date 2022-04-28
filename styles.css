@@ -9,6 +9,10 @@
   height: 10vw;
 }
 
+.buttons {
+  height: 2vw;
+}
+
 img {
     max-height: 100%;
     background-size: 100% 100%;
