@@ -5,7 +5,7 @@ template.innerHTML = `
 
   <div class="header">
     <img src="figures/CardinalQuiltsLogo.png" align="left">
-    <img src="figures/CardinalQuiltsNameLogo.png" align="top">
+    <img src="figures/CardinalQuiltsNameLogo.png" align="top" style="padding: 0.3% 0% 0% 0%">
   </div>
   <div class="buttons">
   <a class="page-link" href="index.html"><button class="button">Home</button></a>

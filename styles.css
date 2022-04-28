@@ -9,12 +9,12 @@
   height: 10vw;
 }
 
-.buttons {
-  height: 2vw;
-}
-
-img {
+.header img {
     max-height: 100%;
     background-size: 100% 100%;
-    padding: 0% 1% 0% 0%
+}
+
+
+.buttons {
+  height: 2vw;
 }
