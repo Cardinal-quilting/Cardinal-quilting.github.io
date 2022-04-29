@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: relative;
   padding: 0.0%;
   text-align: left;
   background: -webkit-linear-gradient(left, #67000d, #bdbdbd);
