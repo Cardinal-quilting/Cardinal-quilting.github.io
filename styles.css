@@ -35,3 +35,9 @@ button.navigation {
 button.navigation:hover {
   background-color: #252525;
 }
+
+#menu-gui-container {
+  position: absolute;
+  top: 12.5vw;
+  left: 81vw;
+}
