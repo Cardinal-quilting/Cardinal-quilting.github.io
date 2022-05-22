@@ -1,27 +1,37 @@
+<!doctype html>
+
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The homepage for Cardinal Quilting.">
+  <meta name="description" content="Begin a new paper piecing project or load an existing one.">
   <meta name="author" content="Andrew D. Davis">
 
+  <script src="lib/dat.gui.min.js"></script>
 
-    <title>Cardinal Quilting</title>
-    <script src="lib/dat.gui.min.js"></script>
-
-   <!-- load the header from a JavaScript file -->
-<script src="header.js" type="text/javascript" defer></script>
-
-<script src="MenuGUI.js" type="text/javascript" defer></script>
-
-  </head>
-
+  <!-- load the header from a JavaScript file -->
+  <script src="header.js" type="text/javascript" defer></script>
+</head>
 <body>
+  <div id="menu-gui-container"></div>
+
+  <p>Welcome to the paper peicing portal!</p>
+
+<form id="frm1" action="paper-piecing-project.html">
+  Aspect ratio: <input type="number" step=0.01 value=1.0 name="aspect ratio"><br><br>
+  <input type="button" onclick="myFunction()" value="Start new project">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+
   <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML canvas tag.</canvas>
 
 <script src="main/Visualizer.js"></script>
-
 
 <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
 <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
@@ -33,8 +43,6 @@ var loadFile = function(event) {
 	image.src = URL.createObjectURL(event.target.files[0]);
 };
 </script>
-
-<div id="menu-gui-container"></div>
 
 <button onclick="window.print()">Print this page</button>
 

@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edit a paper piecing project.">
+  <meta name="author" content="Andrew D. Davis">
+
+  <script src="lib/dat.gui.min.js"></script>
+
+    <!-- load the header from a JavaScript file -->
+  <script src="header.js" type="text/javascript" defer></script>
+
+  <!-- load the menu gui for quilt options -->
+  <script src="MenuGUI.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <div id="menu-gui-container"></div>
+
+  <script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  const aspectRatio = urlParams.get('aspect ratio')
+  console.log(aspectRatio);
+
+  </script>
+</body>
+</html>

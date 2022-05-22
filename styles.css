@@ -18,14 +18,31 @@
   height: 4.5vh;
 }
 
+input[type=button] {
+  background-color: #67000d;
+  color: #f0f0f0;
+  padding: 0.5vh 0.5vw;
+  text-decoration: none;
+  text-align: center;
+  margin: 1vh 0.1vw;
+  font-size: 2vh;
+  cursor: pointer;
+  border-radius: 1vw;
+  border-color: #252525;
+  display: inline-block;
+}
+
+input[type=button]:hover {
+  background-color: #252525;
+}
+
 button.navigation {
   background-color: #67000d;
-  border: none;
   color: #f0f0f0;
   padding: 0.5vh 0.5vw;
   text-align: center;
   display: inline-block;
-  font-size: 1.5vh;
+  font-size: 2vh;
   margin: 1vh 0.1vw;
   cursor: pointer;
   border-radius: 1vw;
