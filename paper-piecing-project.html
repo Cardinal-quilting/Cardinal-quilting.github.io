@@ -13,20 +13,26 @@
     <!-- load the header from a JavaScript file -->
   <script src="header.js" type="text/javascript" defer></script>
 
-  <!-- load the menu gui for quilt options -->
-  <script src="MenuGUI.js" type="text/javascript" defer></script>
+  <!-- load the options gui for paper peicing -->
+  <script src="PaperPiecingOptions.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <div id="menu-gui-container"></div>
 
+  <p id="project-info"></p>
+
   <script>
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
 
+  // get the aspect ratio and display it
   const aspectRatio = urlParams.get('aspect ratio')
-  console.log(aspectRatio);
-
+  document.getElementById("project-info").innerHTML = "Quilt aspect ratio (width/height): " + aspectRatio;
   </script>
+
+  <canvas id="imageCanvas" style="border:3px solid #d3d3d3;"></canvas>
+
+  <script src="main/Visualizer.js"></script>
 </body>
 </html>
